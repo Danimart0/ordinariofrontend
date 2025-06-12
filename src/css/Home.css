@@ -65,3 +65,9 @@
     border-bottom: none;
   }
 }
+
+.home-container img {
+  width: 55rem;
+  display: block;
+  margin: 0 auto;
+}

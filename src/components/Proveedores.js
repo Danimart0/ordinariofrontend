@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../css/Proveedores.css';
 
 function Proveedores() {
   const [proveedores, setProveedores] = useState([]);
@@ -58,7 +59,7 @@ function Proveedores() {
   };
 
   return (
-    <div>
+    <div className='proveedores-container'>
       <h2>Proveedores</h2>
       <form onSubmit={handleSubmit}>
         <input
@@ -86,8 +87,10 @@ function Proveedores() {
         {proveedores.map(prov => (
           <li key={prov.id}>
             <strong>{prov.nombre}</strong> - Tel: {prov.telefono} - Correo: {prov.correo}
-            <button onClick={() => handleEdit(prov)}>Editar</button>
-            <button onClick={() => handleDelete(prov.id)}>Eliminar</button>
+            <div>
+              <button onClick={() => handleEdit(prov)}>Editar</button>
+              <button onClick={() => handleDelete(prov.id)}>Eliminar</button>
+            </div>
           </li>
         ))}
       </ul>

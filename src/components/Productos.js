@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import '../css/Productos.css';
 
 function Productos() {
   const [productos, setProductos] = useState([]);
@@ -87,7 +88,7 @@ function Productos() {
   };
 
   return (
-    <div>
+    <div className='productos-container'>
       <h2>Productos</h2>
 
       {!showForm && (
