@@ -1,33 +1,89 @@
-.login-container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px 30px;
+body {
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
   color: #333;
 }
 
-.login-container h2 {
-  color: #2c3e50;
-  margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 2.5rem;
+.login-container {
+  max-width: 320px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 8px;
   text-align: center;
 }
 
-.login-container p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  margin-bottom: 18px;
-  text-align: center;
+.login-container h2 {
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #222;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border: 1.8px solid #bbb;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #222;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+  outline: none;
+  border-color: #555;
+  background-color: #fff;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 12px 0;
+  background-color: #444;
+  color: #eee;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #222;
+}
+
+.register-section {
+  margin-top: 20px;
+  font-size: 14px;
   color: #555;
 }
 
-.login-container input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+.register-section span {
+  margin-right: 6px;
+}
+
+.register-section a button {
+  background-color: #666;
+  color: #eee;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.register-section a button:hover {
+  background-color: #444;
 }
