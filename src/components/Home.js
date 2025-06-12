@@ -15,7 +15,7 @@ const Home = () => {
         <li><Link to="/historial">Historial de compras y movimientos</Link></li>
       </ul>
       <img className='home-img' src='https://eldiariony.com/wp-content/uploads/sites/2/2024/12/16-electrodomesticos-de-tu-hogar-que-hacen-que-tu-factura-de-electricidad-sea-cara-shutterstock_2473408983.jpg?w=4096' />
-      <p>¡Gracias por visitarnos!</p>
+      <p>¡Gracias por usar nuestro servicio!</p>
     </div>
   );
 };

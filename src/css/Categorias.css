@@ -5,7 +5,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #f9f9f9;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   color: #333;
 }
 
@@ -25,6 +25,23 @@
   color: #555;
 }
 
+
+.btn-regresar {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db; 
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.btn-regresar:hover {
+  background-color: #217dbb; 
+}
+
+
 .categorias-container button {
   background-color: #3498db;
   color: white;
@@ -36,16 +53,8 @@
   margin-bottom: 20px;
   transition: background-color 0.3s;
 }
-
 .categorias-container button:hover {
-  background-color: #2980b9;
-}
-
-.categorias-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  margin-bottom: 30px;
+  background-color: #217dbb;
 }
 
 .categorias-form input[type="text"],
@@ -57,7 +66,7 @@
 }
 
 .categorias-form button {
-  background-color: #2ecc71;
+  background-color: #27ae60; 
   padding: 10px;
   font-weight: 600;
   border-radius: 6px;
@@ -66,18 +75,11 @@
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
 .categorias-form button:hover {
-  background-color: #27ae60;
+  background-color: #1e8449; 
 }
 
-.categorias-form button[type="button"] {
-  background-color: #e74c3c;
-}
 
-.categorias-form button[type="button"]:hover {
-  background-color: #c0392b;
-}
 
 .categorias-list {
   list-style: none;
@@ -95,7 +97,7 @@
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 2px 6px rgb(0 0 0 / 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .categoria-info {
@@ -117,29 +119,84 @@
   gap: 10px;
 }
 
-.categoria-buttons button {
-  padding: 8px 12px;
-  border: none;
-  border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.3s;
+.categoria-buttons button:first-child {
+     background-color: #e4ad55;
+}
+.categoria-buttons button:first-child:hover {
+  background-color: #d68910; 
 }
 
-.categoria-buttons button:first-child {
+
+
+
+.categoria-buttons button:nth-child(3) {
+  background-color: #3498db; 
+}
+.categoria-buttons button:nth-child(3):hover {
+  background-color: #217dbb;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  color: #333;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.modal-content button {
+
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: backgr
+}
+
+.btn-editar {
   background-color: #e4ad55;
 }
 
-.categoria-buttons button:first-child:hover {
+.btn-editar:hover {
   background-color: #cc8d27;
 }
 
-.categoria-buttons button:last-child {
+.btn-eliminar {
   background-color: #d56154;
 }
 
-.categoria-buttons button:last-child:hover {
+.btn-eliminar:hover {
   background-color: #c0392b;
+}
+
+.btn-detalles {
+  background-color: #3498db; 
+}
+
+.btn-detalles:hover {
+  background-color: #2980b9;
 }
