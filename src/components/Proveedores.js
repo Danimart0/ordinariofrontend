@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../css/Proveedores.css';
 
 function Proveedores() {
@@ -60,6 +61,9 @@ function Proveedores() {
 
   return (
     <div className='proveedores-container'>
+      <Link to="/" className="btn-regresar">
+        ← Regresar a Inicio
+      </Link>
       <h2>Proveedores</h2>
       <form onSubmit={handleSubmit}>
         <input
